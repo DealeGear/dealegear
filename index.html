@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealeGear - Plataforma de Criação de Projetos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Fixo -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">DealeGear</div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#como-funciona">Como funciona</a></li>
+                    <li><a href="#iniciar-projeto">Inicie seu projeto</a></li>
+                    <li><a href="#comunidade">Comunidade</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#perguntas">Perguntas</a></li>
+                    <li><a href="#" class="btn-link">Entrar</a></li>
+                    <li><a href="#iniciar-projeto" class="btn btn-primary">Começar agora</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ideias não esperam. Construa a sua agora.</h1>
+                <p class="hero-subtitle">O DealeGear é a plataforma para você iniciar seu próprio projeto — seja hobby, renda extra, mudança de carreira ou startup.</p>
+                <div class="hero-buttons">
+                    <a href="#iniciar-projeto" class="btn btn-primary">Iniciar projeto</a>
+                    <a href="#tipos-projetos" class="btn btn-secondary">Explorar ideias</a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Engrenagens e pessoas colaborando -->
+                    <g transform="translate(250, 200)">
+                        <!-- Engrenagem central -->
+                        <circle cx="0" cy="0" r="60" fill="var(--accent-orange)" opacity="0.2"/>
+                        <path d="M-50,0 L-40,-10 L-40,10 Z M50,0 L40,-10 L40,10 Z M0,-50 L-10,-40 L10,-40 Z M0,50 L-10,40 L10,40 Z" fill="var(--accent-orange)"/>
+                        <circle cx="0" cy="0" r="30" fill="var(--accent-orange)"/>
+                        
+                        <!-- Pessoas ao redor -->
+                        <g transform="translate(-120, -80)">
+                            <circle cx="0" cy="0" r="20" fill="var(--accent-blue)"/>
+                            <path d="M-20,20 Q-20,40 0,40 Q20,40 20,20" fill="var(--accent-blue)"/>
+                        </g>
+                        
+                        <g transform="translate(120, -80)">
+                            <circle cx="0" cy="0" r="20" fill="var(--accent-lime)"/>
+                            <path d="M-20,20 Q-20,40 0,40 Q20,40 20,20" fill="var(--accent-lime)"/>
+                        </g>
+                        
+                        <g transform="translate(-120, 80)">
+                            <circle cx="0" cy="0" r="20" fill="var(--accent-blue)"/>
+                            <path d="M-20,20 Q-20,40 0,40 Q20,40 20,20" fill="var(--accent-blue)"/>
+                        </g>
+                        
+                        <g transform="translate(120, 80)">
+                            <circle cx="0" cy="0" r="20" fill="var(--accent-lime)"/>
+                            <path d="M-20,20 Q-20,40 0,40 Q20,40 20,20" fill="var(--accent-lime)"/>
+                        </g>
+                        
+                        <!-- Linhas de conexão -->
+                        <line x1="-100" y1="-60" x2="-50" y2="-30" stroke="var(--accent-orange)" stroke-width="2" opacity="0.5"/>
+                        <line x1="100" y1="-60" x2="50" y2="-30" stroke="var(--accent-orange)" stroke-width="2" opacity="0.5"/>
+                        <line x1="-100" y1="60" x2="-50" y2="30" stroke="var(--accent-orange)" stroke-width="2" opacity="0.5"/>
+                        <line x1="100" y1="60" x2="50" y2="30" stroke="var(--accent-orange)" stroke-width="2" opacity="0.5"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="section">
+        <div class="container">
+            <h2 class="section-title">Como funciona</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Crie sua ideia</h3>
+                    <p>Registre o que você quer construir. Dê vida aos seus pensamentos e transforme-os em um projeto concreto.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Use nossas ferramentas</h3>
+                    <p>Organize metas, tarefas e recursos com ferramentas intuitivas projetadas para acelerar seu progresso.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Construa junto</h3>
+                    <p>Convide pessoas e leve o projeto adiante. A colaboração é a chave para transformar ideias em realidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipos de Projetos -->
+    <section id="tipos-projetos" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Tipos de projetos possíveis</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <svg class="project-icon" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 5 L35 15 L35 25 L20 35 L5 25 L5 15 Z"/>
+                        <circle cx="20" cy="20" r="8"/>
+                    </svg>
+                    <h3>Hobby criativo</h3>
+                    <p>Arte, música, eletrônica DIY e outras paixões que quer transformar em projetos reais.</p>
+                </div>
+                <div class="project-card">
+                    <svg class="project-icon" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M10 15 L30 15 L30 25 L10 25 Z"/>
+                        <circle cx="15" cy="20" r="3"/>
+                        <circle cx="25" cy="20" r="3"/>
+                    </svg>
+                    <h3>Projetos de renda extra</h3>
+                    <p>Loja online, freelas, serviços digitais e outras formas de gerar renda adicional.</p>
+                </div>
+                <div class="project-card">
+                    <svg class="project-icon" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 10 L25 20 L20 30 L15 20 Z"/>
+                        <path d="M10 20 L30 20" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <h3>Mudança de carreira</h3>
+                    <p>Portfólio, estudos aplicados, certificações e projetos para sua transição profissional.</p>
+                </div>
+                <div class="project-card">
+                    <svg class="project-icon" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 5 L30 15 L25 30 L15 30 L10 15 Z"/>
+                        <circle cx="20" cy="20" r="5"/>
+                    </svg>
+                    <h3>Startup</h3>
+                    <p>Produto inovador, comunidade de usuários, MVP e projetos para escalar seu negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ferramentas da Plataforma -->
+    <section id="recursos" class="section">
+        <div class="container">
+            <h2 class="section-title">Ferramentas da plataforma</h2>
+            <div id="ferramentas-container" class="tools-grid">
+                <!-- Conteúdo dinâmico via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Inicie seu Projeto -->
+    <section id="iniciar-projeto" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Inicie seu projeto</h2>
+            <form id="projectForm" class="project-form">
+                <div class="form-group">
+                    <label for="projectName">Nome do projeto</label>
+                    <input type="text" id="projectName" name="projectName" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Categoria</label>
+                    <select id="category" name="category" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="hobby">Hobby criativo</option>
+                        <option value="renda">Renda extra</option>
+                        <option value="carreira">Mudança de carreira</option>
+                        <option value="startup">Startup</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="objective">Objetivo principal</label>
+                    <textarea id="objective" name="objective" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="resources">Recursos necessários</label>
+                    <input type="text" id="resources" name="resources" placeholder="Ex: Designer, desenvolvedor, marketing..." required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">Criar projeto</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Comunidade DealeGear -->
+    <section id="comunidade" class="section">
+        <div class="container">
+            <h2 class="section-title">Comunidade DealeGear</h2>
+            <div class="testimonials-container">
+                <div class="testimonials-wrapper" id="testimonialsWrapper">
+                    <div class="testimonial-card">
+                        <p>"O DealeGear transformou minha ideia de loja online em realidade. Encontrei parceiros e organizei tudo em semanas!"</p>
+                        <div class="testimonial-author">- Ana Silva, Empreendedora</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Mudei de carreira usando a plataforma. Organizei meu portfólio e estudos de forma eficiente."</p>
+                        <div class="testimonial-author">- Carlos Mendes, Designer</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"A comunidade é incrível! Encontrei mentores e colaboradores que aceleraram meu projeto de startup."</p>
+                        <div class="testimonial-author">- Marina Costa, Fundadora</div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev" id="prevTestimonial">‹</button>
+                    <button class="testimonial-btn next" id="nextTestimonial">›</button>
+                </div>
+            </div>
+            <div class="community-cta">
+                <a href="#" class="btn btn-primary">Conectar-se a outros criadores</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos para Crescer -->
+    <section class="resources-banner">
+        <div class="container">
+            <div class="resources-grid">
+                <div class="resource-item">
+                    <svg class="resource-icon" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 5 L35 20 L20 35 L5 20 Z"/>
+                        <text x="20" y="25" text-anchor="middle" font-size="12" fill="white">?</text>
+                    </svg>
+                    <h3>Guia de boas práticas</h3>
+                    <p>Aprenda as melhores estratégias para gerenciar projetos com sucesso</p>
+                </div>
+                <div class="resource-item">
+                    <svg class="resource-icon" viewBox="0 0 40 40" fill="currentColor">
+                        <circle cx="20" cy="20" r="15"/>
+                        <path d="M20 10 L25 20 L20 30 L15 20 Z" fill="white"/>
+                    </svg>
+                    <h3>Rede de mentores</h3>
+                    <p>Conecte-se com especialistas que podem guiar seu desenvolvimento</p>
+                </div>
+                <div class="resource-item">
+                    <svg class="resource-icon" viewBox="0 0 40 40" fill="currentColor">
+                        <rect x="10" y="10" width="20" height="20"/>
+                        <line x1="15" y1="15" x2="25" y2="15" stroke="white" stroke-width="2"/>
+                        <line x1="15" y1="20" x2="25" y2="20" stroke="white" stroke-width="2"/>
+                        <line x1="15" y1="25" x2="20" y2="25" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <h3>Biblioteca de templates</h3>
+                    <p>Modelos prontos para acelerar seu projeto desde o início</p>
+                </div>
+                <div class="resource-item">
+                    <svg class="resource-icon" viewBox="0 0 40 40" fill="currentColor">
+                        <circle cx="20" cy="20" r="15"/>
+                        <path d="M15 20 L18 23 L25 16" stroke="white" stroke-width="3" fill="none"/>
+                    </svg>
+                    <h3>Suporte da comunidade</h3>
+                    <p>Receba ajuda e compartilhe conhecimento com outros criadores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linha do Tempo -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Linha do Tempo de um Criador</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Ideia</h3>
+                        <p>O momento em que tudo começa. Registre sua inspiração inicial.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Protótipo</h3>
+                        <p>Transforme a ideia em algo tangível e testável.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Testes</h3>
+                        <p>Valide seu conceito com usuários reais e colete feedback.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Primeiros usuários</h3>
+                        <p>Conquiste seus primeiros clientes ou seguidores.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Crescimento</h3>
+                        <p>Escale seu projeto e alcance novos patamares.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="perguntas" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-container" id="faqContainer">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>O DealeGear custa algo?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O DealeGear oferece um plano gratuito com funcionalidades essenciais para você começar. Temos também planos premium com recursos avançados para projetos em crescimento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Posso usar a plataforma sozinho?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! O DealeGear foi projetado para ser usado individualmente ou em equipe. Você pode começar sozinho e convidar colaboradores quando estiver pronto.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como encontrar colaboradores?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nossa plataforma tem uma rede de colaboradores onde você pode encontrar pessoas com habilidades complementares. Use filtros por categoria, experiência e disponibilidade.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>E se eu quiser virar startup?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oferecemos recursos específicos para startups, incluindo templates de pitch deck, modelos de validação e conexão com investidores da nossa comunidade.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Meus projetos são privados?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você controla a privacidade dos seus projetos. Pode mantê-los totalmente privados, compartilhar com colaboradores específicos ou torná-los públicos para a comunidade.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Existe limite de projetos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No plano gratuito, você pode criar até 3 projetos simultaneamente. Planos premium oferecem projetos ilimitados e recursos adicionais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <h2 class="cta-title">Sua ideia pode começar hoje.</h2>
+            <a href="#iniciar-projeto" class="btn btn-primary btn-xlarge">Criar meu projeto agora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>DealeGear</h4>
+                    <p>Transformando ideias em projetos reais desde 2024.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#comunidade">Comunidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DealeGear. Todos os direitos reservados. | Licenças abertas quando aplicável.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Sucesso -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3>Projeto criado com sucesso!</h3>
+            <p>Seu projeto foi registrado e está pronto para começar. Vamos transformar sua ideia em realidade!</p>
+            <button class="btn btn-primary" onclick="closeModal()">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Toggle de Modo Claro/Escuro -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
+            <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
+            <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
+            <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
