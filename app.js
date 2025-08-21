@@ -1,10 +1,10 @@
 // Dados iniciais para as ferramentas
 const ferramentas = [
-    { titulo: "Kanban de Tarefas", descricao: "Organize suas atividades em colunas intuitivas." },
-    { titulo: "Modelos de Projeto", descricao: "Templates prontos para iniciar com mais clareza." },
-    { titulo: "Templates Financeiros", descricao: "Controle orçamentos e custos sem complicação." },
-    { titulo: "Recursos de Aprendizado", descricao: "Acesse cursos e materiais para aprimorar suas habilidades." },
-    { titulo: "Rede de Colaboradores", descricao: "Encontre pessoas que podem somar ao seu projeto." }
+    { titulo: "IdeiaHub", descricao: "Crie seus projetos com a ajuda de frameworks e templates" },
+    { titulo: "Modelos de Projeto", descricao: "Veja nossos protótipos e aprenda mais sobre como criar algo novo" },
+    { titulo: "Stairs", descricao: "Nosso aplicativo para criação de projetos em dispositivos móveis" },
+    { titulo: "OneVision", descricao: "Uma plataforma de informações do mundo dos projetos" },
+    { titulo: "Portal DealeGear", descricao: "Guias de estudo, sugestões de projetos e muito mais!" }
 ];
 
 // Inicialização quando o DOM estiver carregado
@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initTestimonials();
     initMobileMenu();
     initTimelineAnimation();
+    initProjectObjective();
 });
 
 // Toggle de tema claro/escuro
@@ -110,6 +111,26 @@ function initFormValidation() {
     });
 }
 
+// Textos pré-definidos para o campo 'Objetivo principal'
+const objectiveTexts = {
+    'hobby': 'Meu objetivo é desenvolver um projeto criativo para meu próprio prazer, sem fins lucrativos.',
+    'renda': 'Meu objetivo é criar um projeto que me gere uma fonte de renda extra, complementando meus ganhos atuais.',
+    'carreira': 'Meu objetivo é desenvolver um projeto para construir um portfólio e me ajudar na transição ou crescimento da minha carreira profissional.',
+    'startup': 'Meu objetivo é criar um projeto com potencial para se tornar um negócio escalável e inovador no mercado.'
+};
+
+// Lógica para preencher o campo 'Objetivo principal' com base na categoria
+function initProjectObjective() {
+    const categorySelect = document.getElementById('category');
+    const objectiveTextarea = document.getElementById('objective');
+
+    if (categorySelect && objectiveTextarea) {
+        categorySelect.addEventListener('change', function() {
+            const selectedCategory = this.value;
+            objectiveTextarea.value = objectiveTexts[selectedCategory] || '';
+        });
+    }
+}
 // Mostrar modal de sucesso
 function showSuccessModal() {
     const modal = document.getElementById('successModal');
