@@ -251,7 +251,7 @@ window.addEventListener('scroll', function() {
     const heroIllustration = document.querySelector('.hero-illustration');
     
     if (heroIllustration) {
-        heroIllustration.style.transform = `translateY(${scrolled * 0.3}px)`;
+        heroIllustration.style.transform = `translateY(${scrolled * 0.2}px)`;
     }
 });
 
