@@ -212,7 +212,7 @@ body {
     padding: var(--spacing-2xl) 0;
     margin-top: 80px;
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
-    padding-bottom: 20rem;
+    padding-bottom: 17rem;
 }
 
 .hero-content {
