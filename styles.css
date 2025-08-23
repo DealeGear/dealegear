@@ -799,3 +799,12 @@ body.dark-mode .moon-icon {
         text-align: center;
     }
 }
+.tool-card {
+    text-decoration: none; /* remove sublinhado */
+    color: inherit;        /* mantém a cor original do texto */
+    display: block;        /* faz o card ocupar toda a área como antes */
+}
+
+.tool-card:hover {
+    cursor: pointer;
+}

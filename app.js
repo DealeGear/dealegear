@@ -1,11 +1,13 @@
 // Dados iniciais para as ferramentas
 const ferramentas = [
-    { titulo: "IdeiaHub", descricao: "Crie seus projetos com a ajuda de frameworks e templates" },
-    { titulo: "Modelos de Projeto", descricao: "Veja nossos protótipos e aprenda mais sobre como criar algo novo" },
-    { titulo: "Stairs", descricao: "Nosso aplicativo para criação de projetos em dispositivos móveis" },
-    { titulo: "OneVision", descricao: "Uma plataforma de informações do mundo dos projetos" },
-    { titulo: "Portal DealeGear", descricao: "Guias de estudo, sugestões de projetos e muito mais!" }
+    { titulo: "IdeiaHub", descricao: "Crie seus projetos com a ajuda de frameworks e templates", url: "https://dealegear.github.io/IdeiaHub/" },
+    { titulo: "GearLabs", descricao: "Veja nossos protótipos e aprenda mais sobre como criar algo novo", url: "https://dealegear.github.io/GearLabs/" },
+    { titulo: "Stairs", descricao: "Nosso aplicativo para criação de projetos em dispositivos móveis", url: "https://seusite.com/stairs" },
+    { titulo: "OneVision", descricao: "Uma plataforma de informações do mundo dos projetos", url: "https://dealegear.github.io/OneVision/" },
+    { titulo: "Portal DealeGear", descricao: "Guias de estudo, sugestões de projetos e muito mais!", url: "https://www.dealegear.com.br" },
+    { titulo: "Gears", descricao: "Modelos de Projetos Prontos para aguçar sua criatividade", url: "https://dealegear.github.io/Gear/" }
 ];
+
 
 // Inicialização quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function() {
@@ -69,8 +71,10 @@ function renderFerramentas() {
     const container = document.getElementById('ferramentas-container');
     
     ferramentas.forEach((ferramenta, index) => {
-        const card = document.createElement('div');
+        const card = document.createElement('a'); // agora é link
         card.className = 'tool-card';
+        card.href = ferramenta.url;
+        card.target = "_blank"; // abre em nova aba
         card.style.animationDelay = `${index * 0.1}s`;
         
         card.innerHTML = `
@@ -81,6 +85,7 @@ function renderFerramentas() {
         container.appendChild(card);
     });
 }
+
 
 // Validação do formulário
 /*function initFormValidation() {
