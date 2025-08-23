@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     renderFerramentas();
     //initFormValidation();
     initFAQ();
-    initTestimonials();
+    //initTestimonials();
     initMobileMenu();
     initTimelineAnimation();
     initProjectObjective();
@@ -176,7 +176,7 @@ function initFAQ() {
 }
 
 // Inicializar carrossel de depoimentos
-function initTestimonials() {
+/*function initTestimonials() {
     const wrapper = document.getElementById('testimonialsWrapper');
     const prevBtn = document.getElementById('prevTestimonial');
     const nextBtn = document.getElementById('nextTestimonial');
@@ -188,7 +188,7 @@ function initTestimonials() {
         wrapper.style.transform = `translateX(${translateX}%)`;
     }
     
-    /*prevBtn.addEventListener('click', function() {
+    prevBtn.addEventListener('click', function() {
         currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
         updateCarousel();
     });
@@ -196,14 +196,14 @@ function initTestimonials() {
     nextBtn.addEventListener('click', function() {
         currentIndex = (currentIndex + 1) % totalTestimonials;
         updateCarousel();
-    });*/
+    });
     
     // Auto-play opcional
     setInterval(() => {
         currentIndex = (currentIndex + 1) % totalTestimonials;
         updateCarousel();
     }, 5000);
-}
+}*/
 
 // Menu mobile
 function initMobileMenu() {
