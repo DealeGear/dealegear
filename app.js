@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initTheme();
     initSmoothScroll();
     renderFerramentas();
-    initFormValidation();
+    //initFormValidation();
     initFAQ();
     initTestimonials();
     initMobileMenu();
@@ -83,7 +83,7 @@ function renderFerramentas() {
 }
 
 // Validação do formulário
-function initFormValidation() {
+/*function initFormValidation() {
     const form = document.getElementById('projectForm');
     
     form.addEventListener('submit', function(e) {
@@ -109,7 +109,7 @@ function initFormValidation() {
         // Limpar formulário
         form.reset();
     });
-}
+}*/
 
 // Textos pré-definidos para o campo 'Objetivo principal'
 const objectiveTexts = {
@@ -188,7 +188,7 @@ function initTestimonials() {
         wrapper.style.transform = `translateX(${translateX}%)`;
     }
     
-    prevBtn.addEventListener('click', function() {
+    /*prevBtn.addEventListener('click', function() {
         currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
         updateCarousel();
     });
@@ -196,7 +196,7 @@ function initTestimonials() {
     nextBtn.addEventListener('click', function() {
         currentIndex = (currentIndex + 1) % totalTestimonials;
         updateCarousel();
-    });
+    });*/
     
     // Auto-play opcional
     setInterval(() => {
