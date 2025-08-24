@@ -5,7 +5,7 @@ const ferramentas = [
     { titulo: "Stairs", descricao: "Nosso aplicativo para criação de projetos em dispositivos móveis", url: "https://seusite.com/stairs" },
     { titulo: "OneVision", descricao: "Uma plataforma de informações do mundo dos projetos", url: "https://dealegear.github.io/OneVision/" },
     { titulo: "Portal DealeGear", descricao: "Guias de estudo, sugestões de projetos e muito mais!", url: "https://www.dealegear.com.br" },
-    { titulo: "Gears", descricao: "Modelos de Projetos Prontos para aguçar sua criatividade", url: "https://dealegear.github.io/Gear/" }
+    { titulo: "Gears", descricao: "Modelos de Projetos Prontos para aguçar sua criatividade", url: "https://dealegear.github.io/Gears/" }
 ];
 
 
