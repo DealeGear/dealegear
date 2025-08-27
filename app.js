@@ -1,11 +1,11 @@
 // Dados iniciais para as ferramentas
 const ferramentas = [
-    { titulo: "IdeiaHub", descricao: "Crie seus projetos com a ajuda de frameworks e templates", url: "https://dealegear.github.io/IdeiaHub/" },
-    { titulo: "GearLabs", descricao: "Veja nossos protótipos e aprenda mais sobre como criar algo novo", url: "https://dealegear.github.io/GearLabs/" },
-    { titulo: "Stairs", descricao: "Nosso aplicativo para criação de projetos em dispositivos móveis", url: "https://seusite.com/stairs" },
-    { titulo: "OneVision", descricao: "Uma plataforma de informações do mundo dos projetos", url: "https://dealegear.github.io/OneVision/" },
+    { titulo: "IdeiaHub", descricao: "Crie seus projetos com a ajuda de frameworks e templates", url: "ideiahub/index.html" },
+    { titulo: "GearLabs", descricao: "Veja nossos protótipos e aprenda mais sobre como criar algo novo", url: "gearlabs/index.html" },
+    { titulo: "Stairs", descricao: "Nosso aplicativo para criação de projetos em dispositivos móveis", url: "stairs/index.html" },
+    { titulo: "OneVision", descricao: "Uma plataforma de informações do mundo dos projetos", url: "onevision/index.html" },
     { titulo: "Portal DealeGear", descricao: "Guias de estudo, sugestões de projetos e muito mais!", url: "https://www.dealegear.com.br" },
-    { titulo: "Gears", descricao: "Modelos de Projetos Prontos para aguçar sua criatividade", url: "https://dealegear.github.io/Gears/" }
+    { titulo: "Gears", descricao: "Modelos de Projetos Prontos para aguçar sua criatividade", url: "gears/index.html" }
 ];
 
 
